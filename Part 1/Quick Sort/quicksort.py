@@ -1,7 +1,5 @@
 # Version 3.6
 
-from random import randint
-
 def medianOf3(a, left, right):
     """
     Chooses the median element out of the left, right and middle elements of the given subarray
