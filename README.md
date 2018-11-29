@@ -8,5 +8,6 @@ These algorithms have been implemented in python.
 - [x] **1. Karatsuba Multiplication**
 - [x] **2. Merge Sort**
 - [x] **3. Counting inversions**
-- [ ] **4. Strassen's Subcubic Matrix Multiplication**
+- [x] **4. Strassen's Subcubic Matrix Multiplication**
 - [ ] **5. Closest Pair**
+- [x] **6. Quick Sort**
