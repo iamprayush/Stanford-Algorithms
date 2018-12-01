@@ -1,7 +1,5 @@
 # Version 3.6
 
-arr = [1, 3, 5, 2, 4, 6]
-
 def countInv(arr):
 	"""
 	Counts the number of inversions in a given array
