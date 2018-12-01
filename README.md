@@ -1,6 +1,6 @@
 # Stanford-Algorithms
 
-This is my implementation of all the algorithms covered in the MOOC, Stanford Algorithms.
+This is my implementation and short descriptions of all (_almost!_) the algorithms covered in the MOOC, Stanford Algorithms.
 These algorithms have been implemented in python.
 
 ## Part 1: Divide and Conquer Algorithms
