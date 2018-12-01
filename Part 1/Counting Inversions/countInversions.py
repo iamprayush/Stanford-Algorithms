@@ -18,8 +18,8 @@ def countInv(arr):
 		b = arr[mid:]
 		
 		# Recursively split array into 2 equal parts and count left and right invs
-		a, ai = mergeSort(a)
-		b, bi = mergeSort(b)
+		a, ai = countInv(a)
+		b, bi = countInv(b)
 		c = []
 
 		i = 0
