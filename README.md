@@ -11,3 +11,4 @@ These algorithms have been implemented in python.
 - [x] **4. Strassen's Subcubic Matrix Multiplication**
 - [ ] **5. Closest Pair**
 - [x] **6. Quick Sort**
+- [x] **7. Randomized Selection**
