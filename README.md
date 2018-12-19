@@ -12,3 +12,7 @@ These algorithms have been implemented in python.
 - [ ] **5. Closest Pair**
 - [x] **6. Quick Sort**
 - [x] **7. Randomized Selection**
+
+## Part 2: Graph Algos
+
+- [x] **1. Karger's Min Cut Algorithm**
