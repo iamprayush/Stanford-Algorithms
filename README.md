@@ -16,3 +16,6 @@ These algorithms have been implemented in python.
 ## Part 2: Graph Algos
 
 - [x] **1. Karger's Min Cut Algorithm**
+- [x] **2. Breadth First Search**
+- [ ] **3. Depth First Search**
+- [ ] **4. Dijkstra's Shortest Path Algorithm**
