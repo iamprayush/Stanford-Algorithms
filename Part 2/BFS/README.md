@@ -5,7 +5,7 @@ Here, I've implemented the simple BFS algorithm and the shortest path finder alg
 ## 1. BFS Traversal  
 **Input:** A directed graph G(V,E) in adjacency list format and the starting vertex.  
 **Output:** Prints out all vertices/nodes in BFS traversal.  
-BFS traversal is implemented with the help of a LIFO data structure (Queue) in order to keep track of the current vertices.
+BFS traversal is implemented with the help of a FIFO data structure (Queue) in order to keep track of the current vertices.
 The idea is very simple: All we're doing is starting with the "start" node, looking at all the neighbours by adding them to the queue on by one. At each insertion of an "unvisited" node in the queue, we look at all it's unvisited neighbours and then finally pop that node out from the queue.
 This helps in traversing the graph in a layer-by-layer mehtod.
 
