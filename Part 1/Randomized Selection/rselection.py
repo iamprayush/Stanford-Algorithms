@@ -2,10 +2,6 @@
 
 import random
 
-arr = [10, 8, 2, 4]
-k = 3                # The statistic (kth lowest number)(1-based indexed)
-# Output should be 8 in this case
-
 def partition(a, left, right):
     """
     Swaps elemnts untill the pivot is in the ideal place.
@@ -55,5 +51,3 @@ def randSelection(a, left=0, right=None):
         return randSelection(a, left, pivInd-1)         # left half
     else:
         return randSelection(a, pivInd+1, right)        # right half
-
-print(randSelection(arr))
