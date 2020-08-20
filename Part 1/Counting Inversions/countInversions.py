@@ -2,7 +2,7 @@ def count_split_inversions(left_arr, right_arr):
     li, ri, inversions = 0, 0, 0
     merged = []
     while li < len(left_arr) and ri < len(right_arr):
-        if left_arr[li] < right_arr[ri]:
+        if left_arr[li] <= right_arr[ri]:
             merged.append(left_arr[li])
             li += 1
         else:
