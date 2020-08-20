@@ -1,40 +1,25 @@
-# Version 3.6
+def count_split_inversions(left_arr, right_arr):
+    li, ri, inversions = 0, 0, 0
+    merged = []
+    while li < len(left_arr) and ri < len(right_arr):
+        if left_arr[li] < right_arr[ri]:
+            merged.append(left_arr[li])
+            li += 1
+        else:
+            merged.append(right_arr[ri])
+            ri += 1
+            inversions += len(left_arr) - li
+    for i in range(li, len(left_arr)):
+        merged.append(left_arr[i])
+    for i in range(ri, len(right_arr)):
+        merged.append(right_arr[i])
+    return merged, inversions
 
-def countInv(arr):
-	"""
-	Counts the number of inversions in a given array
-	by divide and conquer approach.
-	Input : array
-	Output : Tuple containing (sorted array, # of inversions)
-	"""
-
-	# Base Case
-	if len(arr) == 1:
-		return arr, 0
-
-	else:
-		mid = int(len(arr)//2)
-		a = arr[:mid]
-		b = arr[mid:]
-		
-		# Recursively split array into 2 equal parts and count left and right invs
-		a, ai = countInv(a)
-		b, bi = countInv(b)
-		c = []
-
-		i = 0
-		j = 0
-		invs = ai + bi + 0 # invs in left half + invs in right half + split invs(initially 0)
-
-		while i < len(a) and j < len(b):
-			if a[i] < b[j]:
-				c.append(a[i])
-				i += 1
-			elif b[j] < a[i]:
-				c.append(b[j])
-				j += 1
-				invs += len(a) - i # counting split inversions
-
-		c += a[i:] + b[j:]
-
-	return c, invs
+def count_inversions(arr, l, r):
+    if l == r:
+        return [arr[l]], 0
+    m = (l + r) // 2
+    left_arr, left_inversions = count_inversions(arr, l, m)
+    right_arr, right_inversions = count_inversions(arr, m + 1, r)
+    merged_arr, split_inversions = count_split_inversions(left_arr, right_arr)
+    return merged_arr, left_inversions + split_inversions + right_inversions
