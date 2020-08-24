@@ -8,7 +8,7 @@ def bfs(graph, start):
 
     # Initializing the explored set with the start vertex
     # Using set for more efficient retrieval
-    explored = set([start])
+    explored = {start}
 
     # Initializing the queue with the start vertex
     q = Queue()
