@@ -1,5 +1,7 @@
 # Stanford-Algorithms
 
+[![DeepSource](https://deepsource.io/gh/iamprayush/Stanford-Algorithms.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/iamprayush/Stanford-Algorithms/?ref=repository-badge)
+
 This is my implementation and short descriptions of all (_almost!_) the algorithms covered in the MOOC, Stanford Algorithms.
 These algorithms have been implemented in python.
 
