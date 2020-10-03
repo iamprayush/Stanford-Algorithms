@@ -47,7 +47,6 @@ def randSelection(a, left=0, right=None):
     pivInd = partition(a, left, right)
     if pivInd == k-1:
         return a[pivInd]
-    elif pivInd > k-1:
+    if pivInd > k-1:
         return randSelection(a, left, pivInd-1)         # left half
-    else:
-        return randSelection(a, pivInd+1, right)        # right half
+    return randSelection(a, pivInd+1, right)        # right half
